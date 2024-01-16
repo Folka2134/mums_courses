@@ -33,49 +33,6 @@ export type CreateEventParams = {
   path: string
 }
 
-export type UpdateEventParams = {
-  userId: string
-  event: {
-    _id: string
-    title: string
-    imageUrl: string
-    description: string
-    location: string
-    startDateTime: Date
-    endDateTime: Date
-    categoryId: string
-    price: string
-    isFree: boolean
-    url: string
-  }
-  path: string
-}
-
-export type DeleteEventParams = {
-  eventId: string
-  path: string
-}
-
-export type GetAllEventsParams = {
-  query: string
-  category: string
-  limit: number
-  page: number
-}
-
-export type GetEventsByUserParams = {
-  userId: string
-  limit?: number
-  page: number
-}
-
-export type GetRelatedEventsByCategoryParams = {
-  categoryId: string
-  eventId: string
-  limit?: number
-  page: number | string
-}
-
 export type Event = {
   _id: string
   title: string
@@ -97,6 +54,54 @@ export type Event = {
     name: string
   }
 }
+
+
+// COURSE PARAMS
+export type CreateCourseParams = {
+  course: {
+    title: string
+    description: string
+    imageUrl: string
+    duration: string
+    price: string
+    isFree: boolean
+    datePosted: Date
+  }
+  path: string
+}
+
+export type UpdateCourseParams = {
+  course: {
+    _id: string
+    title: string
+    description: string
+    imageUrl: string
+    duration: string
+    price: string
+    isFree: boolean
+    datePosted: Date
+  }
+  path: string
+}
+
+export type DeleteCourseParams = {
+  courseId: string
+  path: string
+}
+
+export type GetAllCoursesParams = {
+  query: string
+  category: string
+  limit: number
+  page: number
+}
+
+export type GetCoursesByUserParams = {
+  userId: string
+  limit?: number
+  page: number
+}
+
 
 // ====== CATEGORY PARAMS
 export type CreateCategoryParams = {
