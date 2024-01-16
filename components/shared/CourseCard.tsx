@@ -27,7 +27,7 @@ const CourseCard = ({ courseData }: CourseCardProps) => {
         <p>{courseData.price}</p>
       </CardContent>
       <CardFooter>
-        <Link href={`courses/${courseData.id}`}>
+        <Link href={`courses/${courseData._id}`}>
           <Button>More!</Button>
         </Link>
       </CardFooter>

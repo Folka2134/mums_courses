@@ -25,7 +25,7 @@ export const courseDefaultValues = {
 
 export const dummyCourses = [
   {
-    id: "1",
+    _id: "1",
     title: "Test title",
     desc: "Test description",
     image: "test image",
@@ -33,7 +33,7 @@ export const dummyCourses = [
     duration: "test duration"
   },
   {
-    id: "2",
+    _id: "2",
     title: "Test title2",
     desc: "Test description2",
     image: "test image2",
@@ -41,7 +41,7 @@ export const dummyCourses = [
     duration: "test duration2"
   },
   {
-    id: "3",
+    _id: "3",
     title: "Test title3",
     desc: "Test description3",
     image: "test image3",
