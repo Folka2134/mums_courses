@@ -27,25 +27,31 @@ export const dummyCourses = [
   {
     _id: "1",
     title: "Test title",
-    desc: "Test description",
-    image: "test image",
+    description: "Test description",
+    imageUrl: "test image",
     price: "test price",
-    duration: "test duration"
+    duration: "test duration",
+    isFree: false,
+    datePosted: new Date()
   },
   {
     _id: "2",
     title: "Test title2",
-    desc: "Test description2",
-    image: "test image2",
+    description: "Test description2",
+    imageUrl: "test image2",
     price: "test price2",
-    duration: "test duration2"
+    duration: "test duration2",
+    isFree: false,
+    datePosted: new Date()
   },
   {
     _id: "3",
     title: "Test title3",
-    desc: "Test description3",
-    image: "test image3",
+    description: "Test description3",
+    imageUrl: "test image3",
     price: "test price3",
-    duration: "test duration3"
+    duration: "test duration3",
+    isFree: false,
+    datePosted: new Date()
   }
 ]

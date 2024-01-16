@@ -1,4 +1,3 @@
-import { dummyCourses } from "@/constants";
 import React from "react";
 import CourseCard from "./CourseCard";
 
@@ -7,9 +6,9 @@ const CourseList = () => {
     <div>
       <h1>Courses</h1>
       <div className="flex">
-        {dummyCourses.map((course) => (
-          <CourseCard key={course.id} courseData={course} />
-        ))}
+        {/* {[].map((course) => (
+          <CourseCard key={course._id} courseData={} />
+        ))} */}
       </div>
     </div>
   );

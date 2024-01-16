@@ -1,4 +1,5 @@
-import { Schema, model, models } from "mongoose";
+import { Document, Schema, model, models } from "mongoose";
+
 
 export interface ICourse extends Document {
   _id: string
@@ -22,4 +23,5 @@ const CourseSchema = new Schema({
 })
 
 const Course = model('Course', CourseSchema) || models.Course
+
 export default Course;
